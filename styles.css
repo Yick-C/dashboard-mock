@@ -19,12 +19,73 @@ body {
   grid-area: top;
   background-color: #333;
   color: white;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr 2fr;
   padding: 0 20px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.searchbar {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  gap: 10px;
+}
+
+.searchbar input {
+  border-radius: 10px;
+  width: 50vw;
+  height: 2vh;
+  font-size: medium;
+}
+
+.account-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.account-profile i {
+  cursor: pointer;
+}
+
+.welcome-header {
+  display: flex;
+  gap: 1rem;
+}
+
+.welcome-header img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+}
+
+.greeting {
+  font-weight: 800;
+}
+
+.profile-name {
+  font-weight: 400;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-btn {
+  border-radius: 20px;
+  height: 40px;
+  width: 110px;
+}
+
+.header-btn:hover {
+  background-color: #b4b4b4;
+  cursor: pointer;
+}
 
 .sidebar {
   grid-area: sidebar;
@@ -114,11 +175,18 @@ body {
   align-items: flex-start;
   padding: 10px;
   width: 20vw;
+  gap: 20px;
+}
+
+.trendingImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
 }
 
 .card {
   background-color: #f4f4f4;
-  border-left: solid red 10px;
+  border-left: solid violet 10px;
   display: flex;
   flex-direction: column;
   padding: 10px;
